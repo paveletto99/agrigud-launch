@@ -1,0 +1,11 @@
+# Rule 1
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+# Rule 2
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: http://agrigud.com/sitemap.xml
+Sitemap: http://agrigud.com/en/sitemap.xml
