@@ -19,7 +19,6 @@ body {
 h1 {
     font-family: 'Antic Slab', serif;
     font-size: 10em;
-    /*    color: #FDC10A;*/
     font-weight: bold;
     color: #F8F9FA;
 }
@@ -63,11 +62,23 @@ header.masthead .overlay {
     width: 100%;
     top: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.3;
     /*    background-image: linear-gradient(65deg, rgba(0, 0, 0, 0.0) 30%, transparent 60%);*/
+}
+header.masthead button {
+    font-size: 1rem;
+}
+header.masthead input {
+    font-size: 1rem;
+}
+header.masthead label {
+    font-size: 0.8rem;
 }
 header.masthead h1 {
     font-size: 2rem;
+}
+header.masthead h2 {
+    font-size: 1rem;
 }
 @media (min-width: 768px) {
     header.masthead {
@@ -77,9 +88,15 @@ header.masthead h1 {
     header.masthead h1 {
         font-size: 3rem;
     }
+    header.masthead h2 {
+        font-size: 2rem;
+    }
 }
 .showcase .showcase-text {
-    padding: 7rem;
+    padding: 1rem;
+}
+.showcase .showcase-text blockquote {
+    font-size: 1rem;
 }
 .showcase .showcase-img {
     min-height: 30rem;
@@ -91,7 +108,10 @@ header.masthead h1 {
 }
 @media (min-width: 768px) {
     .showcase .showcase-text {
-        padding: 7rem;
+        padding: 3rem;
+    }
+    .showcase .showcase-text blockquote {
+        font-size: 1.5rem;
     }
 }
 .features-icons {
@@ -120,6 +140,18 @@ header.masthead h1 {
 .testimonials .testimonial-item img {
     max-width: 12rem;
     box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+section.call-to-action button {
+    font-size: 1rem;
+}
+section.call-to-action input {
+    font-size: 1rem;
+}
+section.call-to-action label {
+    font-size: 0.8rem;
+}
+section.call-to-action h2 {
+    font-size: 1rem;
 }
 .call-to-action {
     position: relative;
