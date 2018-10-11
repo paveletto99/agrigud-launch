@@ -153,6 +153,11 @@ section.call-to-action label {
 section.call-to-action h2 {
     font-size: 1rem;
 }
+@media (min-width: 768px) {
+    section.call-to-action h2 {
+        font-size: 2rem;
+    }
+}
 .call-to-action {
     position: relative;
     background-color: #343a40;
