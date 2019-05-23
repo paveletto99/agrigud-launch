@@ -1,36 +1,3 @@
-# Rule 1
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
-# Rule 2
 User-agent: *
-Allow: /
-Disallow: /admin/
+Disallow: /cgi-bin
 
-# Rule 3
-User-agent: HTTrack
-Disallow: /
-
-# Rule 4
-User-agent: Yandex
-Crawl-delay: 10
-
-# Rule 5
-User-agent: AhrefsBot
-Disallow: /
-
-# Rule 6
-User-agent: BLEXBot
-Disallow: /
-
-Allow: *.js$
-Allow: *.css$
-Allow: *.js?*$
-Allow: *.css?*$
-Allow: .js
-Allow: .css
-
-
-
-Sitemap: http://agrigud.com/sitemap.xml
-Sitemap: http://agrigud.com/en/sitemap.xml
