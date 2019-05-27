@@ -313,6 +313,19 @@ body{font-family: Roboto;}blockquote{border-color: #14232e;}.display-1{font-fami
 </svg></span>ISCRIVIMI</button></div>
                 </form>
             </div>
+            <div class="newsletter-wrapper">
+  <form name="submit" method="post" action-xhr="//launch.agrigud.com/mailchimp_post.php" target="_top">
+    <h1>Subscribe to our Newsletter</h1>
+    <p>Join our newsletter for the latest and greatest stuff!</p>
+    <input type="email" name="email" placeholder="email@domain.com" required>
+    <input type="submit" value="Subscribe">
+    <div submit-success>
+       <template type="amp-mustache">
+         Thanks! Check {{email}} to confirm your subscription to the newsletter.
+       </template>
+   </div>
+  </form>
+</div>
         </div>
     </div>
 </section>
