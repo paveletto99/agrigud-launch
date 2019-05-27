@@ -2,18 +2,19 @@
 <html amp >
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-126805250-1"></script-->
-  <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-          dataLayer.push(arguments);
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <amp-analytics type="gtag" data-credentials="include">
+  <script type="application/json">
+  {
+    "vars" : {
+      "gtag_id": "UA-126805250-1",
+      "config" : {
+        "UA-126805250-1": { "groups": "default" }
       }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-126805250-1');
-
+    }
+  }
   </script>
+</amp-analytics>
   <!-- Site made with Mobirise Website Builder v4.9.7, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -126,7 +127,7 @@ body{font-family: Roboto;}blockquote{border-color: #14232e;}.display-1{font-fami
 
     <div class="container">
       <div style="display:flex;">
-        <amp-img class="people" alt="apebox characters" src="static/home/apebox-people.svg">
+        <amp-img layout="responsive" width="833" height="504" class="people" alt="apebox characters" src="static/home/apebox-people.svg"></amp-img>
       </div>
         <h1 class="mbr-section-title mbr-fonts-style align-right mbr-bold mbr-white display-1">
             <strong>APEBOX</strong></h1>
@@ -288,7 +289,7 @@ body{font-family: Roboto;}blockquote{border-color: #14232e;}.display-1{font-fami
 
         <div class="mbr-row mbr-justify-content-center" style="text-align:center">
             <div class="mbr-col-lg-10  mbr-col-md-12 " data-form-type="formoid">
-                <form class="mbr-form mbr-justify-content-center" method="post" target="_top" action="https://agrigud.us19.list-manage.com/subscribe/post?u=041bb56b3df69397483528735&amp;id=02fba9a6f0" data-form-title="Mailchimp Form"><input type="hidden" name="email" data-form-email="true" value="lSXIuPqL9vngqDXUDzTZzVCxVPerjuw8JLWZ7n9LiKeS8ExXLYf/159qIWDTz9Gv8YIP2Or4Sc1+BXQEhHITcE5/AR0g9GI1qaeXypYsDr7A4hdTImpqQGFbRiy1clG0">
+                <form class="mbr-form mbr-justify-content-center" method="post" action-xhr="https://agrigud.us19.list-manage.com/subscribe/post?u=041bb56b3df69397483528735&amp;id=02fba9a6f0" data-form-title="Mailchimp Form" target="_top"><input type="hidden" name="email" data-form-email="true" value="lSXIuPqL9vngqDXUDzTZzVCxVPerjuw8JLWZ7n9LiKeS8ExXLYf/159qIWDTz9Gv8YIP2Or4Sc1+BXQEhHITcE5/AR0g9GI1qaeXypYsDr7A4hdTImpqQGFbRiy1clG0">
                     <div submit-success="">
                       <template data-form-alert="" type="amp-mustache">Subscription successful!</template>
                     </div>
