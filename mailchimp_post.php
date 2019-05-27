@@ -14,7 +14,7 @@ if (!empty($_POST)) {
     echo json_encode($output);
     // $post_data['u'] and $post_data['id'] are required hidden field per:
     // http://kb.mailchimp.com/lists/signup-forms/host-your-own-signup-forms
-    $post_data['u'] = '041bb56b3df69397483528735&amp';
+    $post_data['u'] = '041bb56b3df69397483528735';
     $post_data['id'] = '02fba9a6f0';
     // $post_data['MERGE0'] represents the value of my email submission input tag's name attribute.
     // In my case the attribut of name="MERGE0", so $post_data['MERGE0'] is used as a variable.
