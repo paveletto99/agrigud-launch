@@ -1,10 +1,8 @@
 <?php
-if (!empty($_POST)) {
     header("Access-Control-Allow-Credentials:true");
     header("Access-Control-Allow-Headers:Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token");
     header("Access-Control-Allow-Methods:POST, GET, OPTIONS");
-    //header("access-control-allow-origin:".$_SERVER['HTTP_ORIGIN']);
-    header("Access-Control-Allow-Origin: ". str_replace('.', '-','https://launch.agrigud.com') .".cdn.ampproject.org");
+    header("Access-Control-Allow-Origin:".$_SERVER['HTTP_ORIGIN']);
     header("Access-Control-Expose-Headers:AMP-Access-Control-Allow-Source-Origin");
     // change to represent your site's protocol, either http or https
     header("AMP-Access-Control-Allow-Source-Origin:https://".$_SERVER['HTTP_HOST']);
@@ -35,5 +33,4 @@ if (!empty($_POST)) {
     curl_setopt($curl_connection, CURLOPT_POSTFIELDS, $post_string);
     curl_exec($curl_connection);
     curl_close($curl_connection);
-}
 ?>
