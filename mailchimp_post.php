@@ -6,7 +6,7 @@ if (!empty($_POST)) {
     header("access-control-allow-origin:".$_SERVER['HTTP_ORIGIN']);
     header("access-control-expose-headers:AMP-Access-Control-Allow-Source-Origin");
     // change to represent your site's protocol, either http or https
-    header("amp-access-control-allow-source-origin:https://".$_SERVER['HTTP_HOST']);
+    header("AMP-Access-Control-Allow-Source-Origin:https://".$_SERVER['HTTP_HOST']);
     header("Content-Type: application/json");
     $email = isset($_POST['email']) ? $_POST['email'] : '';
     $output = ['email' => $email];
