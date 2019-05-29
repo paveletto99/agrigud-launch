@@ -7,6 +7,9 @@
     // change to represent your site's protocol, either http or https
     header("AMP-Access-Control-Allow-Source-Origin:https://".$_SERVER['HTTP_HOST']);
     header("Content-Type: application/json");
+    header('Access-Control-Expose-Headers: AMP-Access-Control-Allow-Source-Origin, AMP-Redirect-To');
+    header('AMP-Redirect-To: https://agrigud.com');
+
     $email = isset($_POST['email']) ? $_POST['email'] : '';
     $output = ['email' => $email];
     header("Content-Type: application/json");
