@@ -1,10 +1,11 @@
 <?php
 if (!empty($_POST)) {
-    header("access-control-allow-credentials:true");
-    header("access-control-allow-headers:Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token");
-    header("access-control-allow-methods:POST, GET, OPTIONS");
-    header("access-control-allow-origin:".$_SERVER['HTTP_ORIGIN']);
-    header("access-control-expose-headers:AMP-Access-Control-Allow-Source-Origin");
+    header("Access-Control-Allow-Credentials:true");
+    header("Access-Control-Allow-Headers:Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token");
+    header("Access-Control-Allow-Methods:POST, GET, OPTIONS");
+    //header("access-control-allow-origin:".$_SERVER['HTTP_ORIGIN']);
+    header("Access-Control-Allow-Origin: ". str_replace('.', '-','https://launch.agrigud.com') .".cdn.ampproject.org");
+    header("Access-Control-Expose-Headers:AMP-Access-Control-Allow-Source-Origin");
     // change to represent your site's protocol, either http or https
     header("AMP-Access-Control-Allow-Source-Origin:https://".$_SERVER['HTTP_HOST']);
     header("Content-Type: application/json");
