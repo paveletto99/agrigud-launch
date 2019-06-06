@@ -43,6 +43,8 @@ body{font-family: Roboto;}blockquote{border-color: #14232e;}.display-1{font-fami
   <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
+
 
 
 </head>
@@ -355,26 +357,18 @@ body{font-family: Roboto;}blockquote{border-color: #14232e;}.display-1{font-fami
     }
 </script>
 <!-- Cookie banner -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#252e39"
-    },
-    "button": {
-      "background": "#14a7d0"
+<amp-user-notification id="notification1" layout="nodisplay">
+    <div>
+         <p class="mbr-text mbr-fonts-style align-center mbr-white display-7"> Il nostro sito utilizza cookies per consentire una resa ottimale dei contenuti. Continuando a navigare sul nostro sito, accetti l'utilizzo dei cookie da parte nostra.</p>
+        <button on="tap:notification1.dismiss" class="btn btn-form btn-secondary display-4">Accetto</button>
+    </div>
+</amp-user-notification>
+<style amp-custom>
+    amp-user-notification > div {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        background: #252e39;
     }
-  },
-  "theme": "edgeless",
-  "content": {
-    "message": "Il nostro sito utilizza cookies per consentire una resa ottimale dei contenuti. Continuando a navigare sul nostro sito, accetti l'utilizzo dei cookie da parte nostra.",
-    "dismiss": "Accetto",
-    "link": "Leggi di più",
-    "href": "https://agrigud.com/pages/informativa-cookies"
-  }
-})});
-</script>
+</style>
 </html>
